@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1539150244 source:d:\bejjo\tugas\project\aldhiyabola\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<gl/gl.h>
+	<gl/glu.h>
+	<gl/glut.h>
+	<math.h>
+	<iostream>
+

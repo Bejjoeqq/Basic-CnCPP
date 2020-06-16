@@ -1,0 +1,7 @@
+D:\Bejjo\Tugas\Project\tes\tes\bin\Debug\tes.exe
+D:\Bejjo\Tugas\Project\tes\tes\bin\Debug\tes.pdb
+D:\Bejjo\Tugas\Project\tes\tes\obj\x86\Debug\tes.Form1.resources
+D:\Bejjo\Tugas\Project\tes\tes\obj\x86\Debug\tes.Properties.Resources.resources
+D:\Bejjo\Tugas\Project\tes\tes\obj\x86\Debug\tes.csproj.GenerateResource.Cache
+D:\Bejjo\Tugas\Project\tes\tes\obj\x86\Debug\tes.exe
+D:\Bejjo\Tugas\Project\tes\tes\obj\x86\Debug\tes.pdb

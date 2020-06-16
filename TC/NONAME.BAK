@@ -1,0 +1,48 @@
+#imdsude<stdio.h>d1fd1
+ss
+{
+char kode[10];
+char nama[25];
+ unit;
+float harga;
+d
+
+struct psd persediaan[ffffffffggggfjjf jjjjcccdsfggsdcxgsdgsd 85000,
+"FD-0016","Flash disk 16G Kingstone", 8, 100000,
+"FD-0032","Flash disk 32G Kingstone", 5, 150000,
+"HD-0250","HARDISK 250G SEA GATE",    5, 550000,
+"HD-0500","HARDISK 500G SEA GATE",   10, 850000,
+"HD-1000","HARDISK 1 TERA SEA GATE",  5,1150000,
+"ME-0008","MEMORY EXT 8 KINGSTONE",  10, 120000,
+"ME-0016","MEMORY EXT16 KINGSTONE",  10, 160000,
+"ME-0032","MEMORY EXT32 KINGSTONE",  10, 185000,
+"ME-0064","MEMORY EXT64 KINGSTONE",  10, 215000
+
+};
+
+int i,n=10;
+float total=0,diskon,bayar;
+clrscr();
+
+printf ("  		 PERSEDIAAN PERANGKAT STORAGE DI SALSABILA COMPUTER    		\n");
+printf ("  		JL. PEMBANGUNAN NO. 85B KAMPUS USU PADANG BULAN MEDAN  		\n");
+printf ("-------------------------------------------------------------------------------\n");
+printf (" KODE		NAMA BARANG		UNIT		HARGA		JUMLAH  \n");
+printf ("-------------------------------------------------------------------------------\n");
+
+for(i=0;i<n;i++)
+{
+	printf (" %s     %-25s     %6d     %10.2f     %10.2f\n",persediaan[i].kode,
+	persediaan[i].nama,persediaan[i].unit,persediaan[i].harga,
+	persediaan[i].unit*persediaan[i].harga);
+
+total+=persediaan[i].unit*persediaan[i].harga;
+diskon=total*10/100;
+bayar=total-diskon;
+
+printf ("				TOTAL                %10.2f\n",total);
+printf ("				DISKON 10 PERSEN     % 5.2f\n",diskon);
+printf ("				BAYAR		     % 5.2f\n",bayar);
+getch();
+}
+

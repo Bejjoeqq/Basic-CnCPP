@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1511230455 source:d:\bejjo\tugas\project\upper\lower\main.cpp
+	<iostream>
+	<string.h>
+

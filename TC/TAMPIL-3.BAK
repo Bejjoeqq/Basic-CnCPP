@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main()
+
+{
+  int t,a,L;
+  clrscr();
+  t=15;
+  a=8;
+
+  L=0.5*t*a;
+  printf("%i %i %i ", t,a,L);
+  getch();
+}

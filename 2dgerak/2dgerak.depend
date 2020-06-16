@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1541576568 source:d:\bejjo\tugas\project\2dgerak\main.cpp
+	<GL/glut.h>
+	<math.h>
+

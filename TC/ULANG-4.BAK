@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+  int k;
+  k=1;
+
+  do
+	{
+	   printf("I LOVE YOU\n");
+	   k+=1;
+	}
+	   while (k<11);
+	   getch();
+}
+
+

@@ -1,0 +1,22 @@
+/*Menghitung Luas Persegi Panjang*/
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int L,p,l;
+clrscr();
+
+/*Mencari Luas Empat Persegi dengan Type Data int & Menggunakan Input Data"*/
+printf("\n Menghitung Luas Persegi Panjang");
+
+printf("\n Masukkan Nilai Panjang p = ");
+scanf("%i", &p);
+printf("\n Masukkan Nilai Lebar l = ");
+scanf("%i", &l);
+
+L=p*l;
+
+printf("\n Luas persegi panjang = %i", L);
+getch();
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+int volume,panjang,lebar,tinggi;
+clrscr();
+printf("Mencari volume balok\n---------------------\n\n");
+printf("Nilai panjang = ");
+scanf("%i",&panjang);
+printf("Nilai lebar = ");
+scanf("%i",&lebar);
+printf("Nilai tinggi = ");
+scanf("%i",&tinggi);
+volume=panjang * lebar * tinggi;
+printf("volume balok adalah %i",volume);
+getch();
+}

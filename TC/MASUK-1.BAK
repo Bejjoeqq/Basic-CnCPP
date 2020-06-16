@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+int nilai;
+char nama[10];
+clrscr();
+
+printf("Masukkan Nama :");
+scanf("%s",nama);
+printf("Masukan Nilai :");
+scanf("%i",&nilai);
+printf("Nama yang diinput : %s dengan nilai : %d", nama,nilai);
+getch();
+}

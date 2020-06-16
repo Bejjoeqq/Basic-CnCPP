@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1539156634 source:d:\bejjo\tugas\project\aldhiyamobil\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<math.h>
+	<iostream>
+

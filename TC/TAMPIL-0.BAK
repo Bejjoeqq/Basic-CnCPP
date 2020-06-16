@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void main()
+{
+ int gp,gk,ta,ti;
+ clrscr();
+ gp=600000;
+
+ printf("SLIP GAJI PEGAWAI\n\n");
+ printf("Nama Pegawai : Andika Pratama\n");
+ printf("Jumlah Anak  : 2\n");
+ printf("Pendapatan:\n\n");
+ printf("Gaji Pokok : =600000\n");
+
+ ta=0.01*600000;
+ ti=0.05*600000;
+ gk=gp+ta+ti;
+
+ printf("\n Tunjangan anak : %i ",ta);
+ printf("\n Tunjangan istri : %i ",ti);
+ printf("\n Gaji Kotor : %d ",gk);
+
+ getch();
+ }

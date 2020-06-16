@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+void main()
+{
+int L,p,l;
+clrscr();
+p=5;
+l=10;
+L=p*l;
+printf("%i", L);
+getch();
+}
+

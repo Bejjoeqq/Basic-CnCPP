@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+
+main()
+{
+    int j;
+    clrscr();
+
+    j=1;
+    while (j<=11)
+    {
+	printf("%d",j);
+	j+=2;
+    }
+    getch();
+}

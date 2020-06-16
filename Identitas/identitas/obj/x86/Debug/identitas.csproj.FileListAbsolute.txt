@@ -1,0 +1,4 @@
+D:\Bejjo\Tugas\Project\identitas\identitas\bin\Debug\identitas.exe
+D:\Bejjo\Tugas\Project\identitas\identitas\bin\Debug\identitas.pdb
+D:\Bejjo\Tugas\Project\identitas\identitas\obj\x86\Debug\identitas.exe
+D:\Bejjo\Tugas\Project\identitas\identitas\obj\x86\Debug\identitas.pdb

@@ -1,0 +1,20 @@
+/*Menghitung Luas Persegi Panjang dengan Type Data float dan Memasukkan Data*/
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+float L,p,l;
+clrscr();
+
+printf("\n Menghitung Luas Persegi Panjang");
+printf("\n Masukkan Nilai Panjang p = ");
+scanf("%f", &p);
+printf("\n Masukkan Nilai Lebar l = ");
+scanf("%f", &l);
+
+L=p*l;
+
+printf("\n Luas persegi panjang = %5.2f", L);
+getch();
+}

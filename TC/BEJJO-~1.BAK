@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <string.h>
+
+struct dtnilai
+{
+ char nis[10];
+ char nama[20];
+ int nilai;
+};
+struct dtnilai data[10];
+int j=0;
+
+void tambah_data()
+
+{
+ char jawab[2];
+ clrscr();
+ printf("***************************\n");
+ printf("*    SMK TELKOM MEDAN     *\n");
+ printf("*-------------------------*\n");
+ printf("* Nama    : Aldhiya Rozak *\n");
+ printf("* Kelas   : X-RPL         *\n");
+ printf("* No Urut : 02            *\n");
+ printf("***************************\n");
+ while(1)
+ {
+  fflush(stdin);
+  printf("NIS        : ");scanf("%s",&data[j].nis);
+  printf("Nama       : ");scanf("%s",&data[j].nama);
+  printf("Nilai Test : ");scanf("%i",&data[j].nilai);
+
+  printf("\nAda data lagi (Y/T) : ");scanf("%s",&jawab);
+
+  if((strcmp (jawab,"Y")==0)||(strcmp(jawab,"y")==0))
+  {
+   j++;continue;
+  }
+  else if((strcmp (jawab,"T")==0)||(strcmp(jawab,"t")==0)) break;
+ }
+}
+void tampil()
+{
+ int i;
+ printf("\nData Mahasiswa yang telah diinputkan :\n");
+ printf("NIS\tNAMA\tNILAI\n");
+
+ for(i=0;i<=j;i++)
+ {
+  printf("%s\t%s\t%i\n", data[i].nis,data[i].nama,data[i].nilai);
+ }
+}
+void main()
+{
+ tambah_data();
+ tampil();
+getch();
+}

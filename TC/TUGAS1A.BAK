@@ -1,0 +1,15 @@
+/*program halo*/
+#include <stdio.h>
+#define UMUR 28
+#define PESANAN "Hallo, Dunia"
+void main()
+{
+   int I=10, umur;
+   clrscr();
+
+   umur=5;
+   I=I*UMUR;
+   printf("%d %d %d",I,umur,UMUR);
+   printf(PESANAN);
+   getch();
+}

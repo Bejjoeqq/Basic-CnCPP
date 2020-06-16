@@ -1,0 +1,23 @@
+/*program gaji*/
+#include<stdio.h>
+void main()
+{
+   char nama[14]="Amrizal Zamri";
+   char tgl_gaji[10] = "03/04/2003";
+   int jam_kerja=40;
+   float upah_perjam=7500;
+   float persen_pajak=0.40;
+   float gaji_kotor, pajak, gaji_bersih;
+   clrscr();
+
+   gaji_kotor=jam_kerja*upah_perjam;
+   pajak=persen_pajak*gaji_kotor;
+   gaji_bersih=gaji_kotor-pajak;
+   printf("Sampai dengan %s", tgl_gaji);
+   printf("%s bekerja selama %djam\n",nama,jam_kerja);
+   printf("Dia dibayar %.2f",gaji_kotor);
+   printf("dan setelah dipotong pajak sebesar %3.2f\n",pajak);
+   printf("Gaji bersih ialah : $%3f\n",gaji_bersih);
+   getch();
+
+}

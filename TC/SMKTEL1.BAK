@@ -1,0 +1,10 @@
+#include<stdio.h>
+main()
+{
+clrscr();
+printf("\n Nama : Dimas Surya Pratama");
+printf("\n Kelas : x RPL-1");
+printf("\n No urut : 09");
+printf("\n Hari ini harus lebih baik dari hari kemarin");
+getch();
+}

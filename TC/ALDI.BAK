@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+struct psd
+{
+char kode[5];
+char nama[15];
+int unit;
+float harga;
+};
+struct psd persediaan[100]=
+{
+"M123","Nyuci Motor   ",1,25000,
+"D124","Nyucii Mobil  ",2,40000,
+"P124","Ganti Oil     ",1,70000,
+"K126","Cek sukucadang",3,50000,
+"M137","Cat Body      ",4,250000
+};
+int i,n=5;
+float total=0;
+clrscr ();
+printf("******************************\n");
+printf("*       SMK TELKOM MEDAN     *\n");
+printf("*----------------------------*\n");
+printf("*  Nama      : Aldhiya Rozak *\n");
+printf("*  Kelas     : X RPL         *\n");
+printf("*  No Urut   : 01            *\n");
+printf("******************************\n\n");
+printf("*---------------------------------------------------------------------*\n");
+printf("*--------------------Bejjo-Doorseer-----------------------------------*\n");
+printf("*---------------------------------------------------------------------*\n\n");
+printf("* Kode Nama servis         Unit                      Harga       Total*\n");
+printf("*---------------------------------------------------------------------*\n");
+for(i=0;i<n;i++)
+{
+printf("  %s %s %5d unit              %10.2f %10.2f\n",persediaan[i].kode,persediaan[i].nama,persediaan[i].unit,persediaan[i].harga,persediaan[i].unit*
+persediaan[i].harga);
+total += persediaan[i].unit*persediaan[i].harga;
+printf("*---------------------------------------------------------------------*\n");
+}
+printf("");
+printf("************************ Total *************************  %10.2f  \n",total);
+getch();
+}
+
+

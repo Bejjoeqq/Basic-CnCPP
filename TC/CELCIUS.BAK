@@ -1,0 +1,15 @@
+/*Program Konversi Celcius ke Fahrenheit*/
+
+#include <stdio.h>
+main()
+{
+  float Celcius,Fahrenheit;
+
+  printf("Masukkan Nilai Celcius=");
+  scanf ("%f",&Celcius);
+
+  Fahrenheit=Celcius * 1.8+32; /*menghitung konversi*/
+
+  printf("%f celcius adalah %f fahrenheit \n", Celcius, Fahrenheit);
+
+}

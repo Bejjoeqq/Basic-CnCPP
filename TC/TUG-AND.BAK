@@ -1,0 +1,269 @@
+#include<stdio.h>
+#include<conio.h>
+#define n 3
+void main()
+{
+ char chg, chge,taking, taker='M';
+ char Queue[n]={'W','S','C'};
+ char Desti[n]={'','',''};
+ int i,acak;
+ clrscr();
+ ulang1:
+ srand(time(NULL)); /*fungsi random*/
+ rand();
+ acak=rand()%3+0; /*random sebanyak 3 jenis*/
+ if(acak==1) goto ulang1;
+ printf("\n Langkah 1");
+ printf("\n Origin : %c", taker);
+ for(i=0;i<n;i++)
+	printf("%c",Queue[i]);
+ printf("\n Boat @ Origin:");
+ printf("\n Boat @ Destination:");
+ printf("\n Destination:");
+
+ taking=Queue[acak];
+ Queue[acak]='';
+
+ printf("\n Langkah 2");
+ printf("\n Origin :");
+ for(i=0;i<n;i++)
+	printf("%c",Queue[i]);
+ printf("\n Boat @ Origin : %c %c",taker, taking);
+ printf("\n Boat @ Destination:");
+ printf("\n Destination:");
+
+
+
+ printf("\n Langkah 3");
+ printf("\n Origin :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin:");
+ printf("\n Boat @ Destination: %c %c",taker, taking);
+ printf("\n Destination:");
+
+ printf("\n Langkah 4");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin :");
+ printf("\n Boat @ Destination: %c",taker);
+ printf("\n Destination");
+ Desti[0]=taking;
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+
+ printf("\n Langkah 5");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : %c", taker);");
+ printf("\n Boat @ Destination:")
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+ ulang:
+ srand(time(NULL));
+ rand();
+ acak=rand()%3+0;
+ if(Queue[acak]=='') goto ulang;
+ else{
+	taking=Queue[acak];
+	Queue[acak]='';	
+ }	
+ printf("\n Langkah 6");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : %c %c", taker,taking);
+ printf("\n Boat @ Destination")
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+ printf("\n Langkah 7");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : "); 
+ printf("\n Boat @ Destination:%c %c", taker,taking);
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+ printf("\n Langkah 8");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : "); 
+
+ if(Desti[0]=='s' && taking=='w'
+ {
+	chg=Desti[0]
+	Desti[0]=taking;
+	taking=chg;
+		
+ }	
+ else if(Desti[0]=='s' &&  taking=='C')
+ {
+	chg=Desti[0]
+	Desti[0]=taking;
+	taking=chg;
+ }
+ else if(Desti[0]=='C' && taking=='W')
+ {
+	Desti[1]=taking;
+	taking='';
+ }
+
+ else if(Desti[0]=='C' && taking== 'S')
+ {
+	chg=Desti[0];
+	Desti[0]=taking;
+	taking=chg;
+ }
+
+
+ printf("\n Boat @ Destination:%c %C", taker, taking);
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+ printf("\n Langkah 9");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : %c %c", taker,taking);
+ printf("\n Boat @ Destination")
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+ printf("\n Langkah 10");
+ if(taking=='')
+ {
+	for(i=0;i<n;i++)
+	{
+	  if(Queue[i]!='') 
+		{taking=Queue[i];
+		Queue[i]='';
+            }
+         }
+ }
+ else{if(taking=='s')
+	for(i=0;i<n;i++)
+	{
+	  if(Queue[i]=='C')
+		{
+		  Chge=taking;
+		  taking==Queue[i]
+		  Queue[i]='';		
+		}	
+	}
+
+     }	
+
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : %c %c", taker,taking);
+ printf("\n Boat @ Destination")
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+
+
+ printf("\n Langkah 11");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : "); 
+ printf("\n Boat @ Destination:%c %c", taker,taking);
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+ printf("\n Langkah 12");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : "); 
+ Desti[1]=taking; taking=''; 
+ printf("\n Boat @ Destination:%c %c", taker,taking);
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+
+ printf("\n Langkah 13");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : :%c %c", taker,taking); 
+ printf("\n Boat @ Destination:");
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+
+
+ printf("\n Langkah 14");
+ for(i=0;i<n;i++)
+ {
+	if(Queue[i]='')
+	{
+  	   taking=Queue[i];
+	   Queue[i]=''; 		
+	}	
+ }
+
+	
+
+ printf("\n Langkah 15");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : "); 
+ printf("\n Boat @ Destination:%c %c", taker,taking);
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+
+ printf("\n Langkah 16");
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : "); 
+ printf("\n Boat @ Destination);
+ Desti[2]=taking;
+ taking='';
+
+ printf("\n Destination: %C", taker);
+ for(i=0;i<n;i++)
+	{printf("%c",Desti[i]);}
+
+ prinft("\n Original :");
+ for(i=0;i<n;i++)
+	printf("%c", Queue[i]);
+ printf("\n Boat @ Origin : :%c %c", taker,taking); 
+ printf("\n Boat @ Destination:");
+ printf("\n Destination");
+ for(i=0;i<n;i++)
+	printf("%c",Desti[i]);
+
+ getch(); /*pause*/
+
+}

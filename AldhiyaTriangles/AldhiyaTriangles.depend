@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538555028 source:d:\bejjo\tugas\project\aldhiyatriangles\main.cpp
+	<iostream>
+	<GL/glut.h>
+

@@ -1,0 +1,202 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#define n 4
+
+int IS[n]={1,0,3,2}; /*initial state*/
+int ISt[4];
+int ISnew[4];
+int TL=3; /*tabu list*/
+int ITE=5; /*iterasi*/
+int Pj[n]={10,10,13,4};
+int Dj[n]={4,2,1,12};
+int Wj[n]={14,12,1,12};
+
+void main()
+{
+int tabu[100],z; /* penunjuk tabu */
+int run_up; /*Fbest kedua*/
+int i,x,y,min,maks;
+int Fbest,Fstart;
+int F1,F2,F3,F4;
+int a,b,c,d;
+int Flag; /*penanda tabu*/
+int tanda=0;
+clrscr();
+for(i=0;i<100;i++)
+{ tabu[i]=0;}
+z=0;
+printf("\Iterasi berapa kali?"); scanf("%i",&maks);
+for(min=1;min<=maks;min++)
+{
+Flag=0;tanda=1;
+printf("\nIterasi ke-%i",min);
+ISt[0]=IS[0];
+ISt[1]=IS[1];
+ISt[2]=IS[2];
+ISt[3]=IS[3];
+a=ISt[0];b=ISt[1];c=ISt[2];d=ISt[3];
+F1=Wj[a]*(Pj[a]-Dj[a])+Wj[b]*(Pj[b]+Pj[a]-Dj[b])+Wj[c]*(Pj[c]+Pj[b]+Pj[a]-Dj[c])+Wj[d]*(Pj[d]+Pj[c]+Pj[b]+Pj[a]-Dj[d]);
+printf("\n F1(%i,%i,%i,%i)=%i",a+1,b+1,c+1,d+1,F1);
+	for(i=0;i<100;i++)
+	{
+		if(tabu[i]==F1) 
+			{Flag=1;}
+	}
+	if(Flag==0)
+	{
+	 Fbest=F1;
+	 for(i=0;i<4;i++)
+		{
+ 			ISnew[i]=ISt[i];
+		}
+	}
+	else
+	{	printf("\t TABU");
+	}
+
+for(i=0;i<4;i++)
+{
+ 	ISnew[i]=ISt[i];
+}
+x=IS[0];y=IS[1];
+ISt[0]=y;
+ISt[1]=x;
+ISt[2]=IS[2];
+ISt[3]=IS[3];
+
+a=ISt[0];b=ISt[1];c=ISt[2];d=ISt[3];
+F2=Wj[a]*(Pj[a]-Dj[a])+Wj[b]*(Pj[b]+Pj[a]-Dj[b])+Wj[c]*(Pj[c]+Pj[b]+Pj[a]-Dj[c])+Wj[d]*(Pj[d]+Pj[c]+Pj[b]+Pj[a]-Dj[d]);
+printf("\n F2(%i,%i,%i,%i)=%i",a+1,b+1,c+1,d+1,F2);
+Flag=0;
+if(Fbest>F2)
+{
+	for(i=0;i<100;i++)
+	{
+		if(tabu[i]==F1)
+			{Flag=1;}
+	}
+	if(Flag==0)
+	{
+	 Fbest=F2;
+	 for(i=0;i<4;i++)
+		{
+ 			ISnew[i]=ISt[i];
+		}
+	}
+	else
+	{	printf("\t TABU");
+	}
+}
+
+x=IS[1];y=IS[2];
+ISt[0]=IS[0];
+ISt[1]=y;
+ISt[2]=x;
+ISt[3]=IS[3];
+
+
+a=ISt[0];b=ISt[1];c=ISt[2];d=ISt[3];
+F3=Wj[a]*(Pj[a]-Dj[a])+Wj[b]*(Pj[b]+Pj[a]-Dj[b])+Wj[c]*(Pj[c]+Pj[b]+Pj[a]-Dj[c])+Wj[d]*(Pj[d]+Pj[c]+Pj[b]+Pj[a]-Dj[d]);
+printf("\n F3(%i,%i,%i,%i)=%i",a+1,b+1,c+1,d+1,F3);
+Flag=0;
+if(Fbest>F3)
+{
+	for(i=0;i<100;i++)
+	{
+		if(tabu[i]==F3) 
+			{Flag=1;}
+	}
+	if(Flag==0)
+	{
+	 Fbest=F3;
+	 for(i=0;i<4;i++)
+		{
+ 			ISnew[i]=ISt[i];
+		}
+	}
+	else
+	{	printf("\t TABU");
+	}
+}
+
+x=IS[2];y=IS[3];
+ISt[0]=IS[0];
+ISt[1]=IS[1];
+ISt[2]=y;
+ISt[3]=x;
+
+a=ISt[0];b=ISt[1];c=ISt[2];d=ISt[3];
+F4=Wj[a]*(Pj[a]-Dj[a])+Wj[b]*(Pj[b]+Pj[a]-Dj[b])+Wj[c]*(Pj[c]+Pj[b]+Pj[a]-Dj[c])+Wj[d]*(Pj[d]+Pj[c]+Pj[b]+Pj[a]-Dj[d]);
+printf("\n F4(%i,%i,%i,%i)=%i",a+1,b+1,c+1,d+1,F4);
+Flag=0;
+if(Fbest>F4)
+{
+	for(i=0;i<100;i++)
+	{
+		if(tabu[i]==F4) 
+			{Flag=1;}
+	}
+	if(Flag==0)
+	{
+	 Fbest=F4;
+	 for(i=0;i<4;i++)
+		{
+ 			ISnew[i]=ISt[i];
+		}
+	}
+	else
+	{	printf("\t TABU");
+	}
+}
+for(i=0;i<4;i++)
+	{
+ 		IS[i]=ISnew[i];
+	}
+for(i=0;i<100;i++)
+{
+	if(Fbest==tabu[i]) tanda=0;
+}
+if(tanda==0)
+{
+	if(F1<Fbest) Fbest=F1;
+	else if(F2<Fbest) Fbest=F2;
+	else if(F3<Fbest) Fbest=F3;
+	else if(F4<Fbest) Fbest=F4;
+}
+for(i=0;i<100;i++)
+{
+	if(Fbest==tabu[i]) tanda=0;
+}
+if(tanda==0)
+{
+	if(F1<Fbest) Fbest=F1;
+	else if(F2<Fbest) Fbest=F2;
+	else if(F3<Fbest) Fbest=F3;
+}
+for(i=0;i<100;i++)
+{
+	if(Fbest==tabu[i]) tanda=0;
+}
+if(tanda==0)
+{
+	if(F1<Fbest) Fbest=F1;
+	else if(F2<Fbest) Fbest=F2;
+}
+for(i=0;i<100;i++)
+{
+	if(Fbest==tabu[i]) tanda=0;
+}
+if(tanda==0)
+{
+	if(F1<Fbest) Fbest=F1;
+}
+printf("\n");
+/* mereset isi IS awal */
+
+tabu[z]=Fbest;
+z=z+1;
+}
+getch();
+}
+

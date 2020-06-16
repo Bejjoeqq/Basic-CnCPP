@@ -1,0 +1,14 @@
+/*program lingkaran*/
+#include<stdio.h>
+void main()
+{
+    int j,k,l;
+    const float pi=3.14;
+    j=4;
+    clrscr();
+    printf("jari-jariku adalah>%d\n ",j);
+    printf("Nilai pi ialah>%f\n ",pi);
+    printf("Luas lingkaran ialah>%f\n ", pi*j*j);
+    printf("Terima Kasih.");
+    getch();
+}

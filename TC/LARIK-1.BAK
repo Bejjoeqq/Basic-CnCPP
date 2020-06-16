@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+	char student[6];
+	int i;
+
+	student[0]='A';
+	student[1]='B';
+	student[2]='C';
+	student[3]='D';
+	student[4]='E';
+	student[5]='F';
+
+	for(i=0; i<6; i++)
+	{
+	  printf("Daftar Mahasiswa:\n");
+	  printf("student[%c]=\n",i,student[i]);
+	}
+ }

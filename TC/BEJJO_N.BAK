@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+ int nilai;
+ clrscr();
+ printf("***************************\n");
+ printf("* Nama    : Aldhiya Rozak *\n");
+ printf("* Kelas   : X-RPL         *\n");
+ printf("* No urut : 02            *\n");
+ printf("***************************\n");
+ printf("Masukan nilai anda = ");
+ scanf("%i",&nilai);
+
+ if(nilai > 74)
+ {
+ printf("\n");
+ printf("TUNTAS\n");
+ printf("Jangan pernah sombong\n");
+ printf("pertahankanlah\n");
+ }
+ else
+ {
+ printf("\n");
+ printf("REMEDIAL\n");
+ printf("Jangan pernah menyerah\n");
+ printf("Teruslah berusaha\n");
+ }
+ getch();
+}

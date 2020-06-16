@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+ char nama[50];
+ char kelas[10];
+ char no[6];
+
+ clrscr();
+ printf("*******************************\n");
+ printf("*       SMK TELKOM MEDAN      *\n");
+ printf("*-----------------------------*\n");
+ printf("* Nama      : Aldhiya Rozak   *\n");
+ printf("* Kelas     : X RPL           *\n");
+ printf("* No Urut   : 02              *\n");
+ printf("*******************************\n\n");
+
+ printf("Masukkan nama anda = ");
+ scanf("%s",&nama);
+ printf("Masukkan kelas = ");
+ scanf("%s",&kelas);
+ printf("Masukkan nomor urut = ");
+ scanf("%s",&no);
+ printf("\n\n\n");
+ printf("Nama    = %s",nama);printf("\n");
+ printf("Kelas   = %s",kelas);printf("\n");
+ printf("No urut = %s",no);printf("\n");
+
+ getch();
+ }

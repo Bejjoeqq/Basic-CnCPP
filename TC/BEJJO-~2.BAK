@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+ int i,s;
+ char h=64, nama[5][4][22]=
+ {
+  "AC Milan","Barcelona","Porto","Monaco",
+  "Liverpool","Real Madrid","CSK Moskow","PSG",
+  "Inter Milan","Arsenal","Atletico Madrid","Ajax",
+  "AS Roma","Manchester United","Dortmund","Valencia",
+  "Manchester City","Bayern Munich","Napoli","Vilareal"
+ };
+ clrscr();
+ printf("*******************************\n");
+ printf("*       SMK TELKOM MEDAN      *\n");
+ printf("*-----------------------------*\n");
+ printf("* Nama      : Aldhiya Rozak   *\n");
+ printf("* Kelas     : X RPL           *\n");
+ printf("* No Urut   : 02              *\n");
+ printf("*******************************\n\n");
+
+ printf("Liga Champions : \n\n");
+ for(i=0;i<5;i++)
+ {
+  ++h
+  printf("Group %c \n",h);
+
+  for(s=0;s<4;s++)
+  {
+  printf("   %d. %s \n",s+1, nama[i][s]);
+  }
+  printf(\n");
+ }
+ printf("\n");
+ getch();
+}

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1549439058 source:d:\bejjo\tugas\project\aldhiyaobject3d\main.cpp
+	<GL/glut.h>
+	<windows.h>
+	<iostream>
+

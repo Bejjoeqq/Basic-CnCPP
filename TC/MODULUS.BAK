@@ -1,0 +1,13 @@
+#include <stdio.h>
+main()
+
+{
+  int X,Y,Z;
+
+  X=7;
+  Y=3;
+
+  Z=X%Y;
+  printf("Nilai Z=%d\n",Z);
+ }
+

@@ -1,0 +1,58 @@
+#include<stdio.h>
+#include<conio.h>
+#define n 10
+void main()
+{
+int i,j,k,x,size,L1,L2,U1,U2;
+int aux[n];
+int A[n];
+int angka;
+clrscr();
+for(i=0;i<=n-1;i++)
+{
+printf("\ininput angka:");scanf("%d",&angka);
+A[i]=angka;
+}
+printf("sebelum di sort:\n");
+for(i=0;i<=n-1;i++)
+ printf("%d ",A[i]);
+ printf("\n");
+size=1;
+while(size<n)
+  {L1=0;k=0;
+   while(L1+size<n)
+   {L2=L1+size; U1=L2-1;
+     if(L2+size-1<n)
+      {U2=L2+size-1;}
+    else
+       {U2=n-1;}
+      i=L1; j=L2;
+      while(i<=U1 && j<=U2)
+      {if(A[i]<=A[j])
+       aux[k]=A[i++];
+       else
+	aux[k]=A[j++];
+	k++;
+     }
+     while(i<=U1)
+     {aux[k]=A[i];
+     i++; k++;
+     }
+     while(j<=U2)
+     {aux[k]=A[j++];
+     j++; k++;
+     }
+     L1=U2+1;
+     }
+     for(i=L1;k<n;i++)
+     { aux[k++]=A[i]; }
+     for(i=0;i<n;i++)
+     {A[i]=aux[i]; }
+     size=size*2;
+     }
+     printf("\n\nSetelah disort :\n");
+     for(i=0;i<=n-1;i++)
+     printf("%d ",A[i]);
+     getch();
+   }
+

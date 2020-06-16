@@ -1,0 +1,10 @@
+/*Program Bahasa C*/
+#include <stdio.h>
+void main()
+
+{
+clrscr();
+printf("SMK Telkom Sandhy Putra");
+getch();
+}
+

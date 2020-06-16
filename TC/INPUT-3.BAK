@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  char c;
+  printf("Masukkan sembarang karakter:");
+  c=getche();
+  printf("\n Karakter yang diinput adalah : %c", c);
+}
